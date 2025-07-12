@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NRS Events & Wedding Planners</title>
+  <link rel="stylesheet" href="style.CSS" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  
+  <header>
+   <img src="logo.jpeg " alt="NRS Logo" class="logo" width="200px" height="60px" /> <h1>NRS EVENTS AND WEDDING PLANNERS</h1>
+    <nav>
+    
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  
+  <section id="home">
+    <div class="home-overlay">
+      <div class="home-content">
+        <h1>Creating Moments, Crafting Memories</h1>
+        <h2>Your Vision, Our Expertise</h2>
+        <p>We specialize in magical weddings, stylish parties, and elegant events with creativity and perfection.</p>
+        <a href="#services" class="home-btn">Explore Our Services</a>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="about">
+    <h2>About Us</h2>
+    <div class="about-content">
+      <p>NRS Events is your trusted partner in crafting unforgettable experiences. From weddings to corporate events, we handle everything — decor, catering, themes, and guest coordination.</p>
+      <p>Blending elegance with innovation, we’ve completed 500+ events with 100% client satisfaction. We make your special day stress-free and unforgettable.</p>
+      <div class="about-highlights">
+        <div class="highlight-box">
+          <h3>🎯 Personalized Themes</h3>
+          <p>We tailor each event to match your dream style and story.</p>
+        </div>
+        <div class="highlight-box">
+          <h3>🤝 Dedicated Support</h3>
+          <p>Our planners work closely with you for smooth execution.</p>
+        </div>
+        <div class="highlight-box">
+          <h3>🌐 All-in-One Services</h3>
+          <p>From planning to delivery, we manage every step.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="video-section">
+    <div class="video-Container"><video controls src="v7.mp4"></video></div>
+    <div class="video-Container"><video controls src="v2.mp4"></video></div>
+    <div class="video-Container"><video controls src="v3.mp4"></video></div>
+
+     <div class="video-Container"><video controls src="v4.mp4"></video></div>
+    <div class="video-Container"><video controls src="v5.mp4"></video></div>
+    <div class="video-Container"><video controls src="v1.mp4"></video></div>
+
+  </section>
+
+  
+  <section class="services" id="services">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services-wrapper">
+      <button class="scroll-btn left" onclick="scrollServices(-1)">&#10094;</button>
+      <div class="service-scroll-container" id="scrollContainer">
+        <div class="service-card">
+          <img src="Weddings.jpeg" alt="Weddings" />
+          <div class="service-info">
+            <h3>Weddings</h3>
+            <p>Timeless elegance and unforgettable moments.</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <img src="Birthdays.jpeg" alt="Birthdays" />
+          <div class="service-info">
+            <h3>Birthdays</h3>
+            <p>From sweet 16 to golden 60 — fun & vibrant parties!</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <img src="College Events.jpeg" alt="College Events" />
+          <div class="service-info">
+            <h3>College Events</h3>
+            <p>High-energy fests and youth-focused events.</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <img src="cop.jpeg" alt="Corporate Events" />
+          <div class="service-info">
+            <h3>Corporate Events</h3>
+            <p>Professional and impactful business gatherings.</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <img src="cat.jpeg" alt="Catering" />
+          <div class="service-info">
+            <h3>Catering</h3>
+            <p>Delicious menus and flawless food service.</p>
+          </div>
+        </div>
+      </div>
+      <button class="scroll-btn right" onclick="scrollServices(1)">&#10095;</button>
+    </div>
+  </section>
+
+  
+  <section class="address" id="contact">
+    <h1 class="heading">Get in <span>Touch</span></h1>
+    <div class="address-container">
+      <div class="address-box">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Location</h3>
+        <p>123 Main Street, Hyderabad, India - 500001</p>
+      </div>
+      <div class="address-box">
+        <i class="fas fa-envelope"></i>
+        <h3>Email</h3>
+        <p>support@nrs-events.com<br>info@nrs-events.com</p>
+      </div>
+      <div class="address-box">
+        <i class="fas fa-phone-alt"></i>
+        <h3>Phone</h3>
+        <p>NAVEEN : +91 8143656945<br> NIRANJAN : +91 8501967408 <br> NARENDRA : +91 9440497408</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer>
+    <p>&copy; 2025 NRS Events. All rights reserved.</p>
+  </footer>
+
+
+  <script>
+    function scrollServices(direction) {
+      const container = document.getElementById('scrollContainer');
+      const scrollAmount = 320;
+      container.scrollBy({
+        left: direction * scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+
+</body>
+</html>
